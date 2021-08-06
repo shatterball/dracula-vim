@@ -169,6 +169,7 @@ call s:h('DraculaPinkItalic', s:pink, s:none, [s:attrs.italic])
 call s:h('DraculaPurple', s:purple)
 call s:h('DraculaPurpleBold', s:purple, s:none, [s:attrs.bold])
 call s:h('DraculaPurpleItalic', s:purple, s:none, [s:attrs.italic])
+call s:h('DraculaPurpleInverse', s:bg, s:purple)
 
 call s:h('DraculaRed', s:red)
 call s:h('DraculaRedInverse', s:fg, s:red)
@@ -224,11 +225,10 @@ hi! link IncSearch    DraculaOrangeInverse
 call s:h('LineNr', s:comment)
 hi! link MoreMsg      DraculaFgBold
 hi! link NonText      DraculaSubtle
-hi! link Pmenu        DraculaBgDark
+hi! link Pmenu        DraculaBgLight
 hi! link PmenuSbar    DraculaBgDark
-hi! link PmenuSel     DraculaSelection
+hi! link PmenuSel     DraculaPurpleInverse
 hi! link PmenuThumb   DraculaSelection
-hi! link Question     DraculaFgBold
 hi! link Search       DraculaSearch
 call s:h('SignColumn', s:comment)
 hi! link TabLine      DraculaBoundary

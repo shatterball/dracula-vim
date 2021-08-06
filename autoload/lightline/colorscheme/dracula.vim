@@ -19,7 +19,7 @@ let s:yellow   = g:dracula#palette.yellow
 if exists('g:lightline')
 
   let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-  let s:p.normal.left = [ [ s:black, s:purple ], [ s:cyan, s:gray ] ]
+  let s:p.normal.left = [ [ s:black, s:purple ], [ s:white, s:gray ], [s:black, s:green] ]
   let s:p.normal.right = [ [ s:black, s:purple ], [ s:white, s:darkblue ] ]
   let s:p.inactive.right = [ [ s:black, s:darkblue ], [ s:white, s:black ] ]
   let s:p.inactive.left =  [ [ s:cyan, s:black ], [ s:white, s:black ] ]
@@ -29,7 +29,7 @@ if exists('g:lightline')
   let s:p.normal.middle = [ [ s:white, s:gray ] ]
   let s:p.inactive.middle = [ [ s:white, s:gray ] ]
   let s:p.tabline.left = [ [ s:darkblue, s:gray ] ]
-  let s:p.tabline.tabsel = [ [ s:cyan, s:black ] ]
+  let s:p.tabline.tabsel = [ [ s:white, s:black ] ]
   let s:p.tabline.middle = [ [ s:darkblue, s:gray ] ]
   let s:p.tabline.right = copy(s:p.normal.right)
   let s:p.normal.error = [ [ s:red, s:black ] ]
